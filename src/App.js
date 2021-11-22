@@ -24,6 +24,8 @@ class App extends Component {
     const { data, error } = await supabase
       .from('vaccination-list')
       .insert([insertData]);
+    console.log(data);
+    console.log(error);
   };
   updateEntry = async (item) => {
     const updateData = {
@@ -35,14 +37,16 @@ class App extends Component {
       .from('vaccination-list')
       .update(updateData)
       .match({ id: updateData.id });
+    console.log(data);
+    console.log(error);
   };
   deleteEntry = async (id) => {
-    const insertData = {};
-
     const { data, error } = await supabase
       .from('vaccination-list')
       .delete()
       .match({ id });
+    console.log(data);
+    console.log(error);
   };
 
   fSubmit = (e) => {
