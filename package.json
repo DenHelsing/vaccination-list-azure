@@ -2,6 +2,11 @@
   "name": "vaccination-list-azure",
   "version": "0.1.0",
   "private": false,
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/DenHelsing/vaccination-list-azure.git"
+  },
+  "license" : "MIT license" ,
   "dependencies": {
     "@supabase/supabase-js": "^1.28.0",
     "react": "^16.2.0",
